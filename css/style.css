@@ -58,8 +58,7 @@ a{
 .main1{
     background-image: url(../assets/cachorro1.png);
     background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: cover;
+    background-size: 100% 100%;
     height: 100vh;
     border-bottom: solid white 1px;
     display: flex;
@@ -72,7 +71,7 @@ a{
     font-size: 1.6rem;
     width: 20vw;
     text-align: center;
-    padding-top: 2%;
+    padding-top: 11%;
 }
 
 .marcadagua{
@@ -83,8 +82,7 @@ a{
     background-image: url(../assets/cachorro2.png);
     background-color: #F4F2F3;
     background-repeat: no-repeat;
-    background-position: center;
-    background-size:contain;
+    background-size: 100% 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -166,7 +164,7 @@ a{
 .containerfaixadeapoio{
     display: flex;
     justify-content: space-around;
-    width: 100vw;
+    width: 90vw;
 }
 
 .containerfaixa1{
@@ -195,23 +193,13 @@ footer{
 .containerfooter{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     height:50vh;
-    width: 100vw;
 }
 
 .listafooter{
     display: flex;
-    flex-direction: column;;
-    margin-top: 7%;
-}
-
-.footermobile1{
-    display: none;
-}
-
-.footermobile2{
-    display: none;
+    flex-direction: column;
 }
 
 a{
@@ -219,31 +207,47 @@ a{
     color: white;
 }
 
-@media(max-width: 500px){
+@media (min-width: 499px) {
 
+.footermobile1{
+    display: none;
+}
+    
+.footermobile2{
+    display: none;
+}
+
+}
+
+@media(max-width: 500px){
+    
 header{
     height: 15vh;
 }
 
 .minimi1{
-display: none;
+    display: none;
 }
 
 .minimi2{
-display: none;
+    display: none;
 }
 
 .minimi3{
     height:8vh ;
 }
 
+.main1{
+    background-image: url(../assets/cachorro1mobile.png);
+}
+
 .titulomain1{
     width: 70vw;
-    padding-top: 30%;
+    padding-top: 35%;
 }
 
 .marcadagua{
-    padding-top: 10%;
+    padding-top: 7%;
 }
 
 .main2{
@@ -257,9 +261,8 @@ display: none;
 .containermain2{
     display: flex;
     flex-direction: column;
-    
     height: 80vh;
-    width: 100vw;
+    width: 90vw;
 }
 
 .titulomain2{
@@ -352,11 +355,32 @@ display: none;
 }
 
 footer{
-    height: 70vh;
+    height: 100vh;
 }
 
 .containerfooter{
     flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.listafootermobile2{
+    display: flex;
+    justify-content: space-around;
+    width: 60vw;
+}
+
+.logomarcamobile{
+    height: 70px;
+}
+
+.footer{
+    width: 40vw;
+    text-align: center;
+}
+
+.listafooter{
+    width: 100%;
 }
 
 }
